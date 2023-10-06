@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*banner-section start*/
+.container{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+.card{
+    background-color: #f2720a;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.card-right{
+    color: #fff;
+    margin-top: 4em;
+}
+.card-right h1{
+    font-weight: 600;
+}
+.card-right h1{
+    margin-bottom: 15px;
+}
+.card-right button{
+    background-color: transparent;
+    color: #fff;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    padding: 15px 40px;
+    margin-top: 20px;
+}
+.card-right h1{
+    font-weight: 800;
+    font-size: 34px;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: normal;
+    width: 80%;
+}
+.card-right p{
+    width: 80%;
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 40px;
+    line-height: 25px;
+}
+@media (max-width:992px){
+    .card{
+        flex-direction: column-reverse;
+    }
+    .card-left{
+        display: flex;
+        justify-content: center;
+    }
+    .card-left-img img{
+        width: 300px;
+        height: 300px;
+    }
+    .card-right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+    }
+}
+/*banner-section end*/
+
+/*ststisticbar-section start*/
+.wrapper{
+    display: flex;
+    gap: 60px;
+}
+.statistic-card{
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
+    width: 25%;
+}
+.card-content{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-p{
+    line-height: 18px;
+    font-family: CocoSharp,Arial;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
+.card-value{
+    font-family: CocoSharp,Arial;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: normal;
+    color: #FF6400;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.card-desc{
+    line-height: 14px;
+    font-family: CocoSharp,Arial;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    margin-top: -20px;
+    margin-bottom: 45px;
+}
+.card-btn{
+    margin-top: 15px;
+}
+.card-btn button{
+    background-color:#FF6400;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 40px;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 14px;
+} 
+@media (max-width:992px){
+    .wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .statistic-card{
+        width: 46%;
+    }
+    .card-p{
+        font-size: 14px;
+    }
+    .card-value{
+        font-size: 32px;
+    }
+    .card-desc{
+        font-size: 10px;
+    }
+    .card-btn{
+        margin-top: 0;
+    }
+    .card-btn button{
+        font-size: 10px;
+    }
+}
+/*ststisticbar-section end*/
+
+/*appbar-section start*/
+.appbar-section{
+    margin-top: 80px;
+}
+.appbar-wrapper{
+    background-color: rgb(37, 37, 37);;
+    border-radius: 10px;
+    display: flex;
+}
+.appbar-left{
+    position: relative;
+    width: 45%;
+    height: 400px;
+}
+.appbar-left img{
+    float: right;
+    height: 510px;
+    position: absolute;
+    top: -120px;
+    right: 70px;
+}
+.appbar-right{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    text-align: start;
+    width: 50%;
+    margin-top: 6%;
+    padding-left: 8%;
+}
+.appbar-right-head{
+    line-height: 28px;
+    font-family: CocoSharp,Arial;
+    font-weight: 800;
+    font-size: 22px;
+    color: #FF6400;
+    margin: 0 0 20px
+}
+.appbar-right-text{
+    font-family: CocoSharp,Arial;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.43;
+    margin-bottom: 40px;
+
+}
+.appbar-right-buttons{
+    width: 100%;
+}
+.appbar-right-buttons button{
+    padding: 16px 25px;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, .6);
+    margin: 5px;
+}
+.appbar-right-buttons button.active{
+    padding: 16px 25px;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 25px;
+    background-color:#FF6400;
+    border: none;
+    color: #fff;
+}
+@media (max-width:992px){
+    .container{
+        width: 90%;
+    }
+    .appbar-wrapper{
+        flex-direction: column;
+    }
+    .appbar-left{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+    .appbar-left img{
+        height: 430px;
+        top: -40px;
+    }
+    .appbar-right{
+        width: 100%;
+    }
+    .appbar-right-head{
+        font-size: 20px;
+    }
+    .appbar-right-buttons .active{
+        width: 90%;
+    }
+    .appbar-right-buttons{
+        font-size: 12px;
+    }
+    .block-btn{
+        width: 50%;
+    }
+}
+/*appbar-section end*/
+
+.applications button{
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, .6);
+    margin-top: 20px;
+}
+.appbar-right-buttons .about{
+    padding: 16px 40px;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 25px;
+    background-color:#FF6400;
+    border: none;
+    color: #fff;
+}
