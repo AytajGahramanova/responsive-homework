@@ -15,6 +15,99 @@
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <div class="top-header">
+        <div class="container">
+          <div class="header-wrapper">
+            <div class="top-header-left">
+              <div class="logo">
+                <img
+                  src="https://unibank.az/assets/images/logonew-orange1.png"
+                  alt=""
+                />
+              </div>
+              <div class="about-links">
+                <a href="#">Xidmət şəbəkəsi</a>
+                <a href="#">Bank haqqında</a>
+                <a href="#">Keşbek</a>
+                <a href="#">Tariflər</a>
+                <a href="#">İnsan resursları</a>
+                <a href="#">Banklar əlaqə və təkliflər</a>
+                <a href="#">F.A.Q</a>
+              </div>
+            </div>
+            <div class="top-header-right">
+              <div class="types">
+                <a href="#">
+                  <button class="self">Fərdi</button>
+                </a>
+                <a href="#">
+                  <button class="business">Biznes</button>
+                </a>
+              </div>
+              <div class="light-icon">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <div class="languages">
+              <a href="#">
+                <button>ENG</button>
+              </a>
+              <a href="#">
+                <button>RUS</button>
+              </a>
+            </div>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-header">
+        <div class="container">
+        <div class="bottom-header-left">
+          <div class="pages-wrapper">
+            <a href="#">Kartlar</a>
+            <a href="#">Kreditər</a>
+            <a href="#">Əmanətlər</a>
+            <a href="#">Köçürmələr</a>
+            <a href="#">Rəqəmsal bankçılıq</a>
+            <a href="#">Əlavə xidmətlər</a>
+          </div>
+        </div>
+        <div class="bottom-header-right">
+          <div class="contact-btn">
+            <button>
+              <i class="fa-solid fa-phone"></i>
+              <span>117</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-header">
+      <div class="container">
+        <div class="mobile-wrapper">
+          <div class="icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="logo">
+            <img
+              src="https://unibank.az/assets/images/logonew-orange1.png"
+              alt=""
+            />
+          </div>
+          <div class="mobile-contact-btn">
+            <button>
+              <i class="fa-solid fa-phone"></i>
+              <span>117</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </header>
+
     <section class="banner-section">
       <div class="swiper banner-swiper">
         <div class="swiper-wrapper">
@@ -155,12 +248,14 @@
                 <a href="#">
                   <button class="active">Ətraflı</button>
                 </a>
-                <a href="#">
-                  <button class="block-btn">Partnyorlar</button>
-                </a>
-                <a href="#">
-                  <button class="block-btn">Şəxsi kabinet</button>
-                </a>
+                <div class="btn-wrapper">
+                  <a href="#">
+                    <button class="block-btn">Partnyorlar</button>
+                  </a>
+                  <a href="#">
+                    <button class="block-btn">Şəxsi kabinet</button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -207,5 +302,12 @@
     </section>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
   <script src="swiper.js"></script>
+  <!-- <script>
+    function addDarkmodeWidget() {
+      new Darkmode().showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+  </script> -->
 </html>

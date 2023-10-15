@@ -16,14 +16,164 @@ section{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+/*header start*/
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-header-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+}
+.top-header-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+   width: 25px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.types button{
+    background-color: rgb(37, 37, 37);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.self{
+    border: 1px solid #f2720a;
+    color: #f2720a;
+}
+.business{
+    border: none;
+    color: #fff;
+}
+.about-links{
+    margin-left: 35px;
+}
+.about-links a{
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    line-height: 12px;
+    font-family: CocoSharp,Arial;
+    margin: 0 10px;
+}
+.light-icon{
+    background-color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.light-icon i{
+    font-size: 16px;
+}
+.languages{
+    margin-left: 5px;
+}
+.languages button{
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+}
+.search{
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.bottom-header-left{
+    margin-top: 20px;
+}
+.bottom-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pages-wrapper a{
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 15px;
+    font-family: CocoSharp,Arial;
+}
+.contact-btn button{
+    background-color: transparent;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+}
+.contact-btn span{
+    color: #fff;
+}
+.contact-btn i{
+    color: #FF6400;
+    margin: 5px;
+}
+.mobile-header{
+    margin: 20px;
+}
+.mobile-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-header .icon{
+    color: #fff;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 17px;
+}
+.mobile-contact-btn button{
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 25px;
+    border: none;
+    padding: 10px 15px;
+}
+.mobile-contact-btn span{
+    color: #fff;
+}
+.mobile-contact-btn i{
+    color: #FF6400;
+    margin: 5px;
+}
+@media (max-width:992px){
+    .top-header{
+        display: none;
+    }
+    .bottom-header{
+        display: none;
+    }
+}
+@media (min-width:992px){
+   .mobile-header{
+    display: none;
+   }
+}
+/*header end*/
 /*banner-section start*/
 .container{
     width: 100%;
-    max-width: 1350px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .card{
-    background-color: #f2720a;
+    background-image: url(https://unibank.az/uploads/banners/16939020511688966778bg2.jpg);
     display: flex;
     justify-content: space-around;
     border-radius: 10px;
@@ -219,6 +369,8 @@ section{
 }
 .appbar-right-buttons{
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 .appbar-right-buttons button{
     padding: 16px 25px;
@@ -291,4 +443,21 @@ section{
     background-color:#FF6400;
     border: none;
     color: #fff;
+}
+.btn-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btn-wrapper a{
+    width: 90%;
+}
+.btn-wrapper a button{
+    width: 100%;
+}
+
+@media (min-width:1024px){
+    .appbar-right-buttons{
+        display: flex;
+    }
 }
